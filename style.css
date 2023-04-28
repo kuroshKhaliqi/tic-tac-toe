@@ -1,0 +1,89 @@
+:root {
+  --primary-color: #68d2e7;
+  --secondary-color: #f2852f;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.page {
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: monospace;
+  font-size: 3rem;
+}
+
+.game-feild {
+  width: 450px;
+  height: 450px;
+  border: 5px solid var(--secondary-color);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.btn {
+  width: 33%;
+  height: 33%;
+  border: 4px solid darkgray;
+  font-size: 6rem;
+}
+
+.orange-color {
+  color: var(--secondary-color);
+}
+
+.blue-color {
+  color: var(--primary-color);
+}
+.pop-up-bg {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pop-up {
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+}
+.btn-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+#message-label {
+  font-family: monospace;
+  text-align: center;
+  font-size: 3rem;
+  margin: 1em 0;
+}
+.pop-up-btn {
+  padding: 0.5em 1em;
+  border: 0;
+  text-decoration: none;
+  color: white;
+  margin: 0 2em;
+}
+.restart-btn {
+  background-color: var(--primary-color);
+}
+.quit-btn {
+  background-color: var(--secondary-color);
+}
